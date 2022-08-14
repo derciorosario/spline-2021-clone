@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <title>Spline  clone  2021| Dercio Rosario</title>
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+                    body{
+                     font-family: Abel,Arial, sans-serif;
+                    }
+            .loader{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            background: #111;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            pointer-events: none;
+          }
+
+          .loader h3{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          }
+          .loader h3 span{
+            color: #60467E;
+          }
+          .loader p{
+            font-size: 1.1rem;
+          }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+       <div class="loader">
+         <h3>Spline 2021 clone - by<span> Dercio Rosario</span></h3>
+         <p>Loading...</p>
+       </div>
+       <div class="model-3d">
+          <canvas id="main"></canvas>
+       </div>
+       <div class="img-cursor" style="display: none;">
+          <img src="images/sun.png" height="50px" width="50px">
+       </div>
+       <section class="left-side">
+         <div class="spline-logo">
+           <img src="images/spline.png"/>
+         </div>
+         <div class="year">
+            <span>2021</span>
+         </div>
+         <div class="social">
+           <span><a href="/"><i class="fab fa-facebook"></i></a></span>
+           <span><a href="/"><i class="fab fa-instagram"></i></a></span>
+           <span><a href="/"><i class="fab fa-twitter"></i></a></span>
+         </div>
+       </section>
+       <section class="right-side">
+          <div>
+          </div>
+          <div class="year">
+            
+          </div>
+          <div class="name">
+              <span>MINH PHAM</span>
+          </div>
+        </section>
+       <section class="middle">
+
+         <p>MINH PHAM</p>
+         <h2>EASY 3D FOR WEB</h2>
+         <p>Introducing an easy way to make interactive 3D with ease</p>
+         <br>
+         <br>
+         <br>
+         <br>
+         <div class="video">
+           <span>Watch video</span>
+           <div><i class="fas fa-play"></i></div>
+         </div>
+
+       </section>
+       <section class="home">
+             <nav>
+               <div class="left">
+                  <a href="/">SPLINE</a>
+               </div>
+               <div class="right">
+                    <ul>
+                      <li><a href="/">SIGN IN</a></li>
+                    </ul>
+                    <div class="burger">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+               </div> 
+             </nav>
+       </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
